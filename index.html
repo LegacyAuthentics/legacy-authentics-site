@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Legacy Authentic</title>
+<style>
+  body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f5f5f5; color:#333; }
+  header { background:#0a163d; color:#fff; padding:20px; text-align:center; }
+  main { padding:40px; max-width:800px; margin:auto; background:white; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+  h1 { margin-top:0; }
+  form { margin-top:20px; display:flex; }
+  input[type="text"] { flex-grow:1; padding:10px; border:1px solid #ccc; border-radius:4px 0 0 4px; }
+  button { padding:10px 20px; border:none; background:#0070f3; color:white; border-radius:0 4px 4px 0; cursor:pointer; }
+  button:hover { background:#005bb5; }
+  #result { margin-top:20px; font-weight:bold; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Legacy Authentic</h1>
+  <p>Autograph Authentication Service</p>
+</header>
+<main>
+  <h2>Verify Your Autograph</h2>
+  <p>Enter your certification number below to verify its authenticity.</p>
+  <form id="verifyForm">
+    <input type="text" id="certNumber" placeholder="Certification number" required>
+    <button type="submit">Verify</button>
+  </form>
+  <div id="result"></div>
+</main>
+<script>
+// Sample dataset of certification numbers and messages
+const certificates = {
+  "12345": "Authentic autograph for Example Player",
+  "67890": "Authentic autograph for Famous Artist",
+  "abcde": "Authentic autograph for Celebrity"
+};
+
+document.getElementById('verifyForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const cert = document.getElementById('certNumber').value.trim();
+  const resultDiv = document.getElementById('result');
+  if (certificates[cert]) {
+    resultDiv.textContent = "Certificate valid: " + certificates[cert];
+    resultDiv.style.color = "green";
+  } else {
+    resultDiv.textContent = "Certificate not found. Please contact support.";
+    resultDiv.style.color = "red";
+  }
+});
+</script>
+</body>
+</html>
