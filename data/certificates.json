@@ -1,0 +1,17 @@
+[
+  {
+    "number": "ABC123",
+    "player": "Michael Jordan",
+    "description": "Signed jersey from 1998"
+  },
+  {
+    "number": "XYZ789",
+    "player": "LeBron James",
+    "description": "2016 Finals signed basketball"
+  },
+  {
+    "number": "TST001",
+    "player": "Test Player",
+    "description": "Sample autograph for demonstration"
+  }
+]
