@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;500;700&display=swap');
+
+/*
+ * Legacy Authentics website stylesheet
+ *
+ * This stylesheet defines a clean, modern aesthetic inspired by professional
+ * autograph authentication services. It uses a dark primary color with
+ * gold accents, generous whitespace and tasteful typography. The form
+ * elements and buttons are sized for ease of use on both desktop and mobile.
+ */
+
+:root {
+  --primary-color: #0a163d;   /* Deep navy blue for header */
+  --accent-color:  #c5a65c;   /* Elegant gold accent */
+  --background:    #f7f8fa;   /* Light background for content */
+  --text-color:    #333333;   /* Standard body text */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--background);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Logo styling */
+header .logo {
+  height: 60px;
+  width: auto;
+  margin-right: 20px;
+}
+
+/* Title and tagline */
+header .site-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  margin: 0;
+  line-height: 1.2;
+}
+
+header .tagline {
+  margin: 4px 0 0;
+  font-size: 14px;
+  font-weight: 300;
+  opacity: 0.85;
+}
+
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  color: var(--primary-color);
+  font-size: 28px;
+}
+
+p {
+  margin-top: 12px;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+form {
+  margin-top: 24px;
+  display: flex;
+  width: 100%;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 14px 16px;
+  border: 1px solid #cccccc;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+}
+
+button {
+  padding: 14px 24px;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b49750;
+}
+
+#result {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 500;
+}
